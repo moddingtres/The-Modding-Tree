@@ -32,14 +32,13 @@ addLayer("p", {
             cost: new Decimal(5),
         },
     },
-    upgrades: {
+    
         12: {
             title: "Make this whatever you want!",
             description: "Double your point gain.",
             cost: new Decimal(10),
         },
     },
-    upgrades: {
         13: {
             title: "Make this whatever you want!",
             description: "Double your point gain.",

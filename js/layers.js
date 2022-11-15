@@ -27,22 +27,19 @@ addLayer("p", {
     layerShown(){return true},
     upgrades: {
         11: {
-            title: "Make this whatever you want!",
-            description: "Double your point gain.",
+            description: "Double your Modding Point gain.",
             cost: new Decimal(5),
         },
     },
     upgrades: {
         12: {
-            title: "Make this whatever you want!",
-            description: "Double your point gain.",
+            description: "Double your Modding Point gain. (again)",
             cost: new Decimal(10),
         },
     },
     upgrades: {
      13: {
-            title: "Make this whatever you want!",
-            description: "Double your point gain.",
+            description: "Boost Point gain.",
             cost: new Decimal(25),
             effect() {
                 return player[this.layer].points.add(1).pow(0.5)

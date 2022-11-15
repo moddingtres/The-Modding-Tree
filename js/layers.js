@@ -27,27 +27,26 @@ addLayer("p", {
     layerShown(){return true},
     upgrades: {
         11: {
-            title: "Double Modding Point gain.",
+            title: "Make this whatever you want!",
             description: "Double your point gain.",
             cost: new Decimal(5),
+        },
+    },
     upgrades: {
-             12: {
-                title: "Double Modding Point gain again",
-                description: "Double your point gain (again).",
-                cost: new Decimal(1),
-                upgrades: {
-                    13: {
-                        title: "Gives boost to Prestige Points gain based on Modding Points",
-                        description: "Double your point gain.",
-                        cost: new Decimal(1),
-                        effect() {
-                            return player[this.layer].points.add(1).pow(0.5)
-                        },
-                        effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
-                    },
-                }, },
+        12: {
+            title: "Make this whatever you want!",
+            description: "Double your point gain.",
+            cost: new Decimal(10),
+        },
+    },
+    upgrades: {
+        13: {
+            title: "Make this whatever you want!",
+            description: "Double your point gain.",
+            cost: new Decimal(25),
+            effect() {
+                return player[this.layer].points.add(1).pow(0.5)
             },
         },
     },
 })
-
